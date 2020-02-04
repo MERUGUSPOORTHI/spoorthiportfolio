@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en">
+
+
+    <head>
+        <title>spoorthi portfolio</title>
+       
+                   <link rel="stylesheet" media="screen and (min-width: 900px)" href="style.css">
+              <meta charset='UTF-8'/>
+    </head>
+    <body>
+        <div class="background">
+        <div class="nav">
+            <a  class = "a active" href ="#">HOME</a>
+            <a  class = "b "href ="#">ABOUT ME</a>
+            
+                       
+        </div>
+        <div class ="content">
+             <div class ="home">
+                <h1>Spoorthi Merugu</h1>
+                <h3>Intern</h3>   
+             </div>
+          
+             <div< class="aboutme">
+                <p>HI,</p><br></br>
+                <p>Iam pursing my B.E in ECE in Osmania University.I live in Bellampalli.I am excited to begin my career in field of Tecnology. I look forward to putting my education and acquired skills to use.With interests in corporate and Present Technologies.I am excited to continue developing my skills and gaining valuable experiences as an intern at <b>Enquero GLobal</b>,Bengaluru.
+                </p><br></br>
+                     <p><strong>HOBBIES</strong></p>
+                    <p>I love playing badminton.
+                   <br> Actively participated in the School at Zonal competitions in Karate and I am a Blue belt Holder.</p>
+            </div>
+             
+          
+            
+        </div>
+     </div>
+<script type = "text/javascript"src ="spp/jquery-1.11.3.min.js"></script>
+
+<script type ="text/javascript">
+
+
+
+$(document).ready(function(){
+  $('a').click(function(){
+      var selected =$(this);
+    $('a').removeClass('active');
+    $(selected).addClass('active');
+  });
+   var $a=$('.a');
+   $b=$('.b');
+  
+   $home=$('.home');
+   $aboutme=$('.aboutme');
+ 
+
+   $a.click(function(){
+       $home.fadeIn();
+       $aboutme.fadOut();
+       
+   });
+
+   $b.click(function(){
+    $aboutme.fadeIn();
+    $home.fadeOut();
+    
+
+   });
+  
+
+}); 
+
+</script>
+
+    </body>
+    
+
+</html>
